@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    background-color: rgb(18, 27, 39);
+    height: 90px;
+    flex: 1fr 1fr 1fr;
+    align-items: center;  
+    position: fixed;  
+    z-index: 30;
+}
+
+.logo{
+    margin-left: 25px;
+    background-color: rgb(255, 0, 0);
+    width: 90px;
+    height: 50px;
+    padding: 20px;
+}
+
+.links{
+    display: flex;
+    margin-left: 180px;
+    gap: 45px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-size: 20px;
+}
+
+.links a:hover{
+    color: rgb(47, 166, 214);
+    text-decoration: none;
+}
+
+.links a::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(47, 166, 214);
+    transition: all .5s;
+}
+
+.links a:hover::before{
+    width: 100%;
+}
+
+
+.contact-button{
+    margin-left: 170px;
+    margin-right: 20px;
+    width: 140px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    
+    background-size: 200%;
+    background-image: linear-gradient(to left,#12CBC4,#0652DD,#12CBC4);
+    transition: 0.4s;
+}
+
+.contact-button:hover{
+    background-position: right;
+}
